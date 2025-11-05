@@ -1,0 +1,227 @@
+:root{
+    --bg-colour: #f0f4f8;
+    --header-bg: #ffffff;
+    --primary-colour: #2563eb;
+    --secondary-colour: #ff8c00;
+    --section-bg: #ffffff;
+    --text-colour: #333333;
+    --table-colour: #e2eaf0;
+    --shadow:0 4px 12px rgba(0, 0, 0, 0.1);
+    --border-radius: 12px;
+    --font-style: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Global Styles */
+body{
+    background-color: var(--bg-colour);
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-style);
+    color: var(--text-colour);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    padding: 5px 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-bg);
+    color: var(--text-colour);
+}
+
+header h2{
+    margin: 0;
+    color: var(--primary-colour);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    margin : 0;
+    padding: 0;
+}
+
+nav ul li{
+    margin: 0 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--text-colour);
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s, color 0.3s;
+}
+nav ul li a:hover{
+    background-color: var(--primary-colour);
+    color: var(--header-bg);
+    transform: translateY(-2px);
+}
+
+/* Main Content */
+main{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+section{
+    background-color: var(--section-bg);
+    width: 100%;
+    margin: 20px 0;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 40px;
+}
+
+.projects{
+    transition: transform 0.3s, box-shadow 0.3s ease;
+}
+
+.projects table tbody td:first-child {
+  font-weight: bold;
+}
+.projects:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+section h2{
+    border-bottom: 3px solid var(--primary-colour);
+    display: inline-block;
+    margin-top: 0;
+}
+
+section p{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+
+/* Intro class for the first section */
+.intro{
+    background-color: var(--primary-colour);
+    color: var(--header-bg);
+    text-align: center;
+}
+
+.intro h1{
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.intro h1 span{
+    color: var(--secondary-colour);
+}   
+
+.intro p{
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+table{
+    width: 100%;
+    border: 1px solid var(--table-colour);
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    text-align: left;
+    margin-top: 10px;
+}
+
+th, td{
+    border: 1px solid var(--table-colour);
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+th{
+    color: var(--header-bg);
+    background-color: var(--primary-colour);
+    font-weight: bold;
+}
+
+tbody tr{
+    transition: transform 0.3s, box-shadow 0.3s ease;
+}
+
+tbody tr:hover{
+    background-color: #e8f4f8;
+    transform: translateY(-2px);  
+}
+/*Contact*/
+.contact{
+    transition: background-color 0.3s, color 0.2s;
+}
+
+.contact:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+.contact-container{
+    display: flex;
+    gap: 45px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.contact-info{
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-info a{
+    color: var(--primary-colour);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    margin-bottom: 10px;
+    background-color:#e8f4f8;
+    font-weight: 500;
+    width: 100%;
+    transition: background-color 0.3s, color 0.2s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.contact-info a:hover{
+    background-color: var(--primary-colour);
+    color: var(--header-bg);
+    transform: translateY(-2px);  
+}
+
+.contact-map{
+    flex:2;
+    min-width: 300px;
+    position: relative;
+    border-radius: var(--border-radius);
+}
+/* map */
+.contact-map iframe{
+    width:100%;
+    height:250px;
+    border: none;
+    pointer-events: auto;
+    gestureHandling: 'greedy';
+}
+
+.contact-map h3{
+    margin-top: 0;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #1f2937;
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
