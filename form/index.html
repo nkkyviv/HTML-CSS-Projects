@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Join Our Agency</h1>
+        <p>Tell us a bit about your project and we'll get in touch.</p>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Your Details</legend>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="xyz@email.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="number">Phone Number:</label>
+                        <input type="tel" id="number" name="phone number" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Project Information</legend>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="size">Company Size:</label>
+                        <select name="company size" id="size" required>
+                            <option disabled selected>Select Size</option>
+                            <option value="small">1-10 employees</option>
+                            <option value="medium">11-50 employees</option>
+                            <option value="large">51-200 employees</option>
+                            <option value="bulky">200+ employees</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="deadline">Ideal Deadline:</label>
+                        <input type="date" id="deadline" name="deadline" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="">Project Type:</label>
+                        <div class="input-radio">
+                            <div class="radio-item">
+                                <input type="radio" id="new-website" name="website" value="new-website">
+                                <label for="new-website">New Website</label>
+                            </div>
+
+                            <div class="radio-item">
+                                <input type="radio" id="redesign" name="website" value="redesign">
+                                <label for="redesign">Website Redesign</label>
+                            </div>
+
+                            <div class="radio-item">
+                                <input type="radio" id="web-application" name="website" value="web-application">
+                                <label for="web-application">Web Application</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="">Service of Interest:</label>
+                        <div class="checkbox-item">
+                            <div class="check-box">
+                                <input type="checkbox" id="branding" name="service" value="branding">
+                                <label for="branding">Branding</label>
+                            </div>
+
+                            <div class="check-box">
+                                <input type="checkbox" id="seo" name="service" value="seo">
+                                <label for="seo">SEO</label>
+                            </div>
+
+                            <div class="check-box">
+                                <input type="checkbox" id="maintenance" name="service" value="maintenance">
+                                <label for="maintenance">Ongoing Maintenance</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="description">Project Description:</label>
+                        <textarea name="description" id="description" placeholder="Tell us about your project goals, target audience, and any specific requirements..."></textarea>
+                    </div>
+
+                </div>
+            </fieldset>
+
+            <button type="submit">
+                Submit Request
+            </button>
+        </form>
+    </main>
+    
+</body>
+</html>
