@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate - Green Earth</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--color-cream);
+      color: var(--color-text-dark);
+      text-align: center;
+      padding: 40px;
+    }
+
+    h2 {
+      color: var(--color-text-dark);
+    }
+
+    form {
+      max-width: 600px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: var(--color-light-green);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: var(--color-dark-green);
+    }
+    p a{
+        color: var(--color-text-dark);
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Make a Donation</h2>
+  <p>Your contribution helps us continue our mission to protect and preserve our planet.</p>
+
+  <form>
+    <input type="text" placeholder="Full Name" required />
+    <input type="email" placeholder="Email Address" required />
+    <input type="number" placeholder="Donation Amount ($)" required />
+    <label for="donate">Payment Method *</label>
+    <select name="donate" id="donate">
+      <option value="">Select Payment Method</option>
+      <option value="credit">Credit/Debit Card</option>
+      <option value="paypal">PayPal</option>
+      <option value="bank">Bank Transfer</option>
+    </select>
+    <button type="submit">Donate Now</button>
+  </form>
+
+  <p><a href="index.html">← Back to Home</a></p>
+
+</body>
+</html>
